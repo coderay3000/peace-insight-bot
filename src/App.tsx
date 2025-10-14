@@ -31,7 +31,7 @@ const App = () => (
       <Routes>
         <Route path="/loading" element={<Loading />} />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/" element={<Layout><Index /></Layout>} />
+        <Route path="/" element={<Loading />} />
         <Route path="/input" element={<Layout><Input /></Layout>} />
         <Route path="/voice" element={<Layout><VoiceAnalysis /></Layout>} />
         <Route path="/scoring" element={<Layout><StressScoring /></Layout>} />

@@ -19,7 +19,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         setSession(session);
         setUser(session?.user ?? null);
         
-        if (!session && window.location.pathname !== "/auth" && window.location.pathname !== "/loading") {
+        if (!session && window.location.pathname !== "/auth" && window.location.pathname !== "/loading" && window.location.pathname !== "/") {
           navigate("/auth");
         }
       }
@@ -29,7 +29,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       setSession(session);
       setUser(session?.user ?? null);
       
-      if (!session && window.location.pathname !== "/auth" && window.location.pathname !== "/loading") {
+      if (!session && window.location.pathname !== "/auth" && window.location.pathname !== "/loading" && window.location.pathname !== "/") {
         navigate("/auth");
       }
     });
@@ -42,11 +42,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     navigate("/auth");
   };
 
-  if (!session && window.location.pathname !== "/auth" && window.location.pathname !== "/loading") {
+  if (!session && window.location.pathname !== "/auth" && window.location.pathname !== "/loading" && window.location.pathname !== "/") {
     return null;
   }
 
-  if (window.location.pathname === "/auth" || window.location.pathname === "/loading") {
+  if (window.location.pathname === "/auth" || window.location.pathname === "/loading" || window.location.pathname === "/") {
     return <>{children}</>;
   }
 

@@ -1,16 +1,25 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 import logo from "@/assets/logo.jpg";
 
 const Loading = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate("/auth");
-    }, 3000);
+    let mounted = true;
 
-    return () => clearTimeout(timer);
+    const goNext = async () => {
+      const { data } = await supabase.auth.getSession();
+      const hasSession = !!data.session;
+      setTimeout(() => {
+        if (!mounted) return;
+        navigate(hasSession ? "/chatbot" : "/auth");
+      }, 1800);
+    };
+
+    goNext();
+    return () => { mounted = false; };
   }, [navigate]);
 
   return (

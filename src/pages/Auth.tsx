@@ -62,7 +62,7 @@ const Auth = () => {
         title: "Welcome back!",
         description: "Successfully signed in.",
       });
-      navigate("/");
+      navigate("/chatbot");
     } catch (error: any) {
       toast({
         title: "Error",
