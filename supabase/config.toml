@@ -1,1 +1,10 @@
 project_id = "vktwfciehapkgbgbynzp"
+
+[functions.analyze-text]
+verify_jwt = false
+
+[functions.analyze-voice]
+verify_jwt = false
+
+[functions.chat]
+verify_jwt = false
