@@ -1,3 +1,13 @@
+# This Project is for Hack'O Gravity 
+## 👥 Team Members
+
+| Name | Role |
+|------|------|
+| **Ayush Yadav** | Full Stack Developer |
+| **Anamika Mishra** | AI Engineer |
+| **Kunal Saxena** | Frontend Developer |
+| **Ritik Rathore** | Backend Engineer |
+
 # Mind Connect - AI Mental Wellness Companion
 
 ## Project info
