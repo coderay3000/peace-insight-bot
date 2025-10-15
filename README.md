@@ -1,22 +1,14 @@
-# Welcome to your Lovable project
+# Mind Connect - AI Mental Wellness Companion
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/5b7bdef9-bb48-4b0c-8e11-2872890b310a
+An AI-powered mental health and stress management companion to track, analyze, and manage stress with personalized guidance.
 
 ## How can I edit this code?
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/5b7bdef9-bb48-4b0c-8e11-2872890b310a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +54,14 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/5b7bdef9-bb48-4b0c-8e11-2872890b310a) and click on Share -> Publish.
+You can deploy this project using any static hosting service like Vercel, Netlify, or GitHub Pages.
 
-## Can I connect a custom domain to my Lovable project?
+## Features
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- AI-powered chatbot for mental wellness support
+- Stress tracking and analysis
+- Voice emotion analysis
+- Mood journaling
+- Community support
+- Personalized recommendations
+- Progress tracking and rewards
